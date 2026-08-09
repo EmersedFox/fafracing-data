@@ -1,0 +1,73 @@
+{
+  "team": {
+    "name": "Furred and Feathers Racing",
+    "short": "FAF Racing",
+    "aliases": [
+      "Furred and Feathers Racing",
+      "Furry Temptations Racing",
+      "FAF Racing"
+    ]
+  },
+  "cars": [
+    {
+      "num": "337",
+      "name": "Furred",
+      "accent": "fur"
+    },
+    {
+      "num": "338",
+      "name": "Feathers",
+      "accent": "feather"
+    }
+  ],
+  "schedule": "schedule.json",
+  "seasons": [
+    {
+      "id": "2026-special-events",
+      "season": "2026 Special Events",
+      "seasonShort": "2026 Specials",
+      "series": "Special Races",
+      "kind": "special",
+      "year": 2026,
+      "file": "seasons/2026-special-events.json",
+      "events": 2,
+      "cars": [
+        "337"
+      ],
+      "firstDate": "2026-06-20",
+      "lastDate": "2026-07-25"
+    },
+    {
+      "id": "2026-s3-global-endurance-tour",
+      "season": "Global Endurance Tour - 2026 Season 3",
+      "seasonShort": "2026 Season 3",
+      "series": "Global Endurance Tour",
+      "kind": "championship",
+      "year": 2026,
+      "file": "seasons/2026-s3-global-endurance-tour.json",
+      "events": 1,
+      "cars": [
+        "337"
+      ],
+      "firstDate": "2026-07-12",
+      "lastDate": "2026-07-12"
+    },
+    {
+      "id": "2026-s2-gt-endurance",
+      "season": "GT Endurance Series by Simucube - 2026 Season 2",
+      "seasonShort": "2026 Season 2",
+      "series": "GT Endurance Series by Simucube",
+      "kind": "championship",
+      "year": 2026,
+      "file": "seasons/2026-s2-gt-endurance.json",
+      "events": 11,
+      "cars": [
+        "10",
+        "17",
+        "387"
+      ],
+      "firstDate": "2026-03-29",
+      "lastDate": "2026-06-07"
+    }
+  ]
+}

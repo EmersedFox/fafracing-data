@@ -1,0 +1,1291 @@
+[
+ {
+  "id": "circuit-de-spa-francorchamps-2026-s3-r1",
+  "date": "2026-07-12",
+  "track": "Circuit de Spa-Francorchamps",
+  "config": "Grand Prix Pits",
+  "series": "Global Endurance Tour",
+  "season": "Global Endurance Tour - 2026 Season 3",
+  "seasonShort": "2026 Season 3",
+  "seasonId": "2026-s3-global-endurance-tour",
+  "sessions": [
+   {
+    "key": "split-2",
+    "split": 2,
+    "totalSplits": 2,
+    "sof": 1365,
+    "numTeams": 28,
+    "numDrivers": 85,
+    "laps": 669,
+    "leadChanges": 61,
+    "eventBestLap": 1228626,
+    "startTime": "2026-07-11T18:00:00Z",
+    "endTime": "2026-07-12T18:19:57Z",
+    "temp": 19,
+    "multiclass": true,
+    "classes": [
+     {
+      "id": 2523,
+      "name": "Dallara P217",
+      "shortName": "Dallara P217",
+      "sof": 0,
+      "numEntries": 0
+     },
+     {
+      "id": 4011,
+      "name": "IMSA23",
+      "shortName": "IMSA23",
+      "sof": 1180,
+      "numEntries": 15
+     },
+     {
+      "id": 4029,
+      "name": "GTP",
+      "shortName": "GTP",
+      "sof": 1591,
+      "numEntries": 13
+     }
+    ],
+    "results": [
+     {
+      "pos": 1,
+      "startPos": 2,
+      "team": "TONDEUZ AGAZON Driver Academy #2",
+      "car": "Cadillac V-Series.R GTP",
+      "carNum": "2",
+      "laps": 669,
+      "bestLap": 1229307,
+      "avgLap": 1292627,
+      "interval": 0,
+      "incidents": 46,
+      "reasonOut": "Running",
+      "lapsLead": 534,
+      "champPts": 95,
+      "carClass": "GTP",
+      "posInClass": 1,
+      "startPosInClass": 2,
+      "classInterval": 0,
+      "drivers": [
+       {
+        "name": "Kevin Stiger",
+        "laps": 184,
+        "avgLap": 1252140,
+        "bestLap": 1229307,
+        "incidents": 10
+       },
+       {
+        "name": "Christophe Trollat",
+        "laps": 181,
+        "avgLap": 1253258,
+        "bestLap": 1233673,
+        "incidents": 9
+       },
+       {
+        "name": "Thomas Druilhe",
+        "laps": 163,
+        "avgLap": 1259088,
+        "bestLap": 1234552,
+        "incidents": 18
+       },
+       {
+        "name": "Cyril Zelfa",
+        "laps": 141,
+        "avgLap": 1294820,
+        "bestLap": 1231718,
+        "incidents": 9
+       }
+      ]
+     },
+     {
+      "pos": 2,
+      "startPos": 1,
+      "team": "Pidgin Racing Global - Purple",
+      "car": "Cadillac V-Series.R GTP",
+      "carNum": "5",
+      "laps": 668,
+      "bestLap": 1228626,
+      "avgLap": 1295826,
+      "interval": -1,
+      "incidents": 95,
+      "reasonOut": "Running",
+      "lapsLead": 27,
+      "champPts": 87,
+      "carClass": "GTP",
+      "posInClass": 2,
+      "startPosInClass": 1,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Dylan Dutemple",
+        "laps": 233,
+        "avgLap": 1285887,
+        "bestLap": 1228626,
+        "incidents": 44
+       },
+       {
+        "name": "Krishen Sharma",
+        "laps": 200,
+        "avgLap": 1272403,
+        "bestLap": 1241458,
+        "incidents": 4
+       },
+       {
+        "name": "Mohamad Shell",
+        "laps": 120,
+        "avgLap": 1270310,
+        "bestLap": 1230991,
+        "incidents": 14
+       },
+       {
+        "name": "Tim McLaughlin",
+        "laps": 115,
+        "avgLap": 1268830,
+        "bestLap": 1239323,
+        "incidents": 33
+       }
+      ]
+     },
+     {
+      "pos": 3,
+      "startPos": 4,
+      "team": "Jellyfish Racing",
+      "car": "Cadillac V-Series.R GTP",
+      "carNum": "62",
+      "laps": 661,
+      "bestLap": 1232729,
+      "avgLap": 1309837,
+      "interval": -1,
+      "incidents": 88,
+      "reasonOut": "Running",
+      "lapsLead": 2,
+      "champPts": 79,
+      "carClass": "GTP",
+      "posInClass": 3,
+      "startPosInClass": 4,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Calvin Wolfe",
+        "laps": 164,
+        "avgLap": 1270474,
+        "bestLap": 1239253,
+        "incidents": 15
+       },
+       {
+        "name": "Corentin Gomez",
+        "laps": 161,
+        "avgLap": 1261252,
+        "bestLap": 1232729,
+        "incidents": 14
+       },
+       {
+        "name": "Johan Brun2",
+        "laps": 119,
+        "avgLap": 1265719,
+        "bestLap": 1233946,
+        "incidents": 16
+       },
+       {
+        "name": "Matt G Edwards",
+        "laps": 91,
+        "avgLap": 1284050,
+        "bestLap": 1246289,
+        "incidents": 23
+       },
+       {
+        "name": "Rait Kulbok",
+        "laps": 77,
+        "avgLap": 1288270,
+        "bestLap": 1252138,
+        "incidents": 12
+       },
+       {
+        "name": "Liam Taylor12",
+        "laps": 49,
+        "avgLap": 1378810,
+        "bestLap": 1249258,
+        "incidents": 8
+       }
+      ]
+     },
+     {
+      "pos": 4,
+      "startPos": 6,
+      "team": "ICONIC BLACKSUITS RACING",
+      "car": "Cadillac V-Series.R GTP",
+      "carNum": "11",
+      "laps": 651,
+      "bestLap": 1237618,
+      "avgLap": 1328562,
+      "interval": -1,
+      "incidents": 139,
+      "reasonOut": "Running",
+      "lapsLead": 0,
+      "champPts": 71,
+      "carClass": "GTP",
+      "posInClass": 4,
+      "startPosInClass": 6,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Jhonier Lucumi M",
+        "laps": 309,
+        "avgLap": 1330623,
+        "bestLap": 1246110,
+        "incidents": 48
+       },
+       {
+        "name": "Carlos Antonio Villanueva",
+        "laps": 178,
+        "avgLap": 1306680,
+        "bestLap": 1244756,
+        "incidents": 72
+       },
+       {
+        "name": "Alex Andreba",
+        "laps": 164,
+        "avgLap": 1273585,
+        "bestLap": 1237618,
+        "incidents": 19
+       }
+      ]
+     },
+     {
+      "pos": 5,
+      "startPos": 10,
+      "team": "Savage Sim Racing - Team Slipstream",
+      "car": "Porsche 963 GTP",
+      "carNum": "10",
+      "laps": 642,
+      "bestLap": 1234855,
+      "avgLap": 1346941,
+      "interval": -1,
+      "incidents": 205,
+      "reasonOut": "Running",
+      "lapsLead": 1,
+      "champPts": 63,
+      "carClass": "GTP",
+      "posInClass": 5,
+      "startPosInClass": 10,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Colton Wheat",
+        "laps": 192,
+        "avgLap": 1306005,
+        "bestLap": 1234855,
+        "incidents": 50
+       },
+       {
+        "name": "Jared Taylor",
+        "laps": 163,
+        "avgLap": 1299185,
+        "bestLap": 1239116,
+        "incidents": 61
+       },
+       {
+        "name": "Adolfo Diaz",
+        "laps": 146,
+        "avgLap": 1384580,
+        "bestLap": 1250580,
+        "incidents": 64
+       },
+       {
+        "name": "Russell Woodhouse",
+        "laps": 141,
+        "avgLap": 1330104,
+        "bestLap": 1238619,
+        "incidents": 30
+       }
+      ]
+     },
+     {
+      "pos": 6,
+      "startPos": 9,
+      "team": "BellHells Racing",
+      "car": "Porsche 963 GTP",
+      "carNum": "15",
+      "laps": 629,
+      "bestLap": 1242698,
+      "avgLap": 1376612,
+      "interval": -1,
+      "incidents": 231,
+      "reasonOut": "Running",
+      "lapsLead": 0,
+      "champPts": 55,
+      "carClass": "GTP",
+      "posInClass": 6,
+      "startPosInClass": 9,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Fabricio Batista",
+        "laps": 363,
+        "avgLap": 1379511,
+        "bestLap": 1242698,
+        "incidents": 159
+       },
+       {
+        "name": "Cassio Lopes",
+        "laps": 266,
+        "avgLap": 1324078,
+        "bestLap": 1245506,
+        "incidents": 72
+       }
+      ]
+     },
+     {
+      "pos": 7,
+      "startPos": 19,
+      "team": "Motts Sim Racing",
+      "car": "McLaren 720S GT3 EVO",
+      "carNum": "13",
+      "laps": 601,
+      "bestLap": 1375146,
+      "avgLap": 1438893,
+      "interval": -1,
+      "incidents": 126,
+      "reasonOut": "Running",
+      "lapsLead": 0,
+      "champPts": 71,
+      "carClass": "IMSA23",
+      "posInClass": 1,
+      "startPosInClass": 6,
+      "classInterval": 0,
+      "drivers": [
+       {
+        "name": "Collin Bruneau",
+        "laps": 161,
+        "avgLap": 1424635,
+        "bestLap": 1377717,
+        "incidents": 32
+       },
+       {
+        "name": "Richard Jacobson3",
+        "laps": 146,
+        "avgLap": 1441840,
+        "bestLap": 1387330,
+        "incidents": 29
+       },
+       {
+        "name": "Hunt Armstrong",
+        "laps": 123,
+        "avgLap": 1413806,
+        "bestLap": 1381124,
+        "incidents": 31
+       },
+       {
+        "name": "Joel G Harrison",
+        "laps": 95,
+        "avgLap": 1415088,
+        "bestLap": 1378093,
+        "incidents": 23
+       },
+       {
+        "name": "Jeff Gooch",
+        "laps": 76,
+        "avgLap": 1414534,
+        "bestLap": 1375146,
+        "incidents": 11
+       }
+      ]
+     },
+     {
+      "pos": 8,
+      "startPos": 18,
+      "team": "Revenant racing Team B",
+      "car": "McLaren 720S GT3 EVO",
+      "carNum": "18",
+      "laps": 595,
+      "bestLap": 1376109,
+      "avgLap": 1455488,
+      "interval": -1,
+      "incidents": 110,
+      "reasonOut": "Running",
+      "lapsLead": 0,
+      "champPts": 65,
+      "carClass": "IMSA23",
+      "posInClass": 2,
+      "startPosInClass": 5,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Chris Downing",
+        "laps": 175,
+        "avgLap": 1412016,
+        "bestLap": 1376109,
+        "incidents": 9
+       },
+       {
+        "name": "Kyzer Riddell",
+        "laps": 151,
+        "avgLap": 1448169,
+        "bestLap": 1384106,
+        "incidents": 32
+       },
+       {
+        "name": "Ken Vaughan",
+        "laps": 148,
+        "avgLap": 1426013,
+        "bestLap": 1385747,
+        "incidents": 20
+       },
+       {
+        "name": "Matt Brice",
+        "laps": 121,
+        "avgLap": 1464887,
+        "bestLap": 1396948,
+        "incidents": 49
+       }
+      ]
+     },
+     {
+      "pos": 9,
+      "startPos": 17,
+      "team": "- IMET - Santa Brisa",
+      "car": "Ferrari 296 GT3",
+      "carNum": "8",
+      "laps": 590,
+      "bestLap": 1369273,
+      "avgLap": 1467161,
+      "interval": -1,
+      "incidents": 190,
+      "reasonOut": "Running",
+      "lapsLead": 0,
+      "champPts": 60,
+      "carClass": "IMSA23",
+      "posInClass": 3,
+      "startPosInClass": 4,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Pablo Ali",
+        "laps": 215,
+        "avgLap": 1454895,
+        "bestLap": 1377741,
+        "incidents": 66
+       },
+       {
+        "name": "Jose Luis Fernandez Nogales",
+        "laps": 149,
+        "avgLap": 1412585,
+        "bestLap": 1369273,
+        "incidents": 33
+       },
+       {
+        "name": "Jerome Ruiz",
+        "laps": 140,
+        "avgLap": 1433160,
+        "bestLap": 1382255,
+        "incidents": 38
+       },
+       {
+        "name": "Fernando Catalán Asensio",
+        "laps": 86,
+        "avgLap": 1473603,
+        "bestLap": 1376637,
+        "incidents": 53
+       }
+      ]
+     },
+     {
+      "pos": 10,
+      "startPos": 21,
+      "team": "APX Endurance Racing",
+      "car": "Lamborghini Huracán GT3 EVO",
+      "carNum": "14",
+      "laps": 590,
+      "bestLap": 1390779,
+      "avgLap": 1467717,
+      "interval": -1,
+      "incidents": 98,
+      "reasonOut": "Running",
+      "lapsLead": 0,
+      "champPts": 55,
+      "carClass": "IMSA23",
+      "posInClass": 4,
+      "startPosInClass": 8,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Jiří Plšek",
+        "laps": 156,
+        "avgLap": 1441108,
+        "bestLap": 1393433,
+        "incidents": 27
+       },
+       {
+        "name": "Michael Aster",
+        "laps": 148,
+        "avgLap": 1481763,
+        "bestLap": 1395122,
+        "incidents": 14
+       },
+       {
+        "name": "Tomas Muhar",
+        "laps": 144,
+        "avgLap": 1437397,
+        "bestLap": 1400576,
+        "incidents": 16
+       },
+       {
+        "name": "Libor Svoboda",
+        "laps": 142,
+        "avgLap": 1439025,
+        "bestLap": 1390779,
+        "incidents": 41
+       }
+      ]
+     },
+     {
+      "pos": 11,
+      "startPos": 16,
+      "team": "Furred and Feathers Racing",
+      "car": "McLaren 720S GT3 EVO",
+      "carNum": "337",
+      "laps": 574,
+      "bestLap": 1380885,
+      "avgLap": 1507125,
+      "interval": -1,
+      "incidents": 242,
+      "reasonOut": "Running",
+      "lapsLead": 0,
+      "champPts": 50,
+      "carClass": "IMSA23",
+      "posInClass": 5,
+      "startPosInClass": 3,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Matthew Lutz2",
+        "laps": 151,
+        "avgLap": 1419857,
+        "bestLap": 1382823,
+        "incidents": 54
+       },
+       {
+        "name": "Caoimhe Harleman",
+        "laps": 143,
+        "avgLap": 1479195,
+        "bestLap": 1380885,
+        "incidents": 68
+       },
+       {
+        "name": "Michael Marczak",
+        "laps": 141,
+        "avgLap": 1515999,
+        "bestLap": 1416522,
+        "incidents": 67
+       },
+       {
+        "name": "Gregory Grantham",
+        "laps": 139,
+        "avgLap": 1523398,
+        "bestLap": 1399207,
+        "incidents": 53
+       }
+      ]
+     },
+     {
+      "pos": 12,
+      "startPos": 12,
+      "team": "FullSendRacing",
+      "car": "Porsche 963 GTP",
+      "carNum": "7",
+      "laps": 513,
+      "bestLap": 1238293,
+      "avgLap": 1685743,
+      "interval": -1,
+      "incidents": 75,
+      "reasonOut": "Running",
+      "lapsLead": 0,
+      "champPts": 47,
+      "carClass": "GTP",
+      "posInClass": 7,
+      "startPosInClass": 12,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Corey Guerrero2",
+        "laps": 267,
+        "avgLap": 1305481,
+        "bestLap": 1243378,
+        "incidents": 40
+       },
+       {
+        "name": "Micaiah Chapman",
+        "laps": 246,
+        "avgLap": 1306124,
+        "bestLap": 1238293,
+        "incidents": 35
+       }
+      ]
+     },
+     {
+      "pos": 13,
+      "startPos": 26,
+      "team": "Northstar Motorsports Purple",
+      "car": "Porsche 911 GT3 R (992)",
+      "carNum": "44",
+      "laps": 427,
+      "bestLap": 1392354,
+      "avgLap": 1908673,
+      "interval": -1,
+      "incidents": 227,
+      "reasonOut": "Disconnected",
+      "lapsLead": 0,
+      "champPts": 45,
+      "carClass": "IMSA23",
+      "posInClass": 6,
+      "startPosInClass": 13,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Zackary Hutchens",
+        "laps": 123,
+        "avgLap": 1435938,
+        "bestLap": 1392949,
+        "incidents": 42
+       },
+       {
+        "name": "Lance Ramirez",
+        "laps": 113,
+        "avgLap": 1496610,
+        "bestLap": 1412844,
+        "incidents": 73
+       },
+       {
+        "name": "Christian Perry",
+        "laps": 106,
+        "avgLap": 1453441,
+        "bestLap": 1392354,
+        "incidents": 57
+       },
+       {
+        "name": "Logan Hutchens",
+        "laps": 85,
+        "avgLap": 1471819,
+        "bestLap": 1406593,
+        "incidents": 55
+       }
+      ]
+     },
+     {
+      "pos": 14,
+      "startPos": 7,
+      "team": "Yellow Flag Motorsport - Yellow",
+      "car": "Cadillac V-Series.R GTP",
+      "carNum": "912",
+      "laps": 390,
+      "bestLap": 1247927,
+      "avgLap": 1495562,
+      "interval": -1,
+      "incidents": 187,
+      "reasonOut": "Disconnected",
+      "lapsLead": 4,
+      "champPts": 39,
+      "carClass": "GTP",
+      "posInClass": 8,
+      "startPosInClass": 7,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Nate Pollard",
+        "laps": 123,
+        "avgLap": 1479647,
+        "bestLap": 1247927,
+        "incidents": 73
+       },
+       {
+        "name": "Kent Shouse",
+        "laps": 104,
+        "avgLap": 1337959,
+        "bestLap": 1249126,
+        "incidents": 37
+       },
+       {
+        "name": "Justin Butcher",
+        "laps": 92,
+        "avgLap": 1301977,
+        "bestLap": 1249057,
+        "incidents": 40
+       },
+       {
+        "name": "Floor Prample",
+        "laps": 71,
+        "avgLap": 1488912,
+        "bestLap": 1282594,
+        "incidents": 37
+       }
+      ]
+     },
+     {
+      "pos": 15,
+      "startPos": 5,
+      "team": "Goon GT/P Enduro Racing",
+      "car": "Ferrari 499P",
+      "carNum": "22",
+      "laps": 200,
+      "bestLap": 1232274,
+      "avgLap": 1301718,
+      "interval": -1,
+      "incidents": 48,
+      "reasonOut": "Disconnected",
+      "lapsLead": 79,
+      "champPts": 31,
+      "carClass": "GTP",
+      "posInClass": 9,
+      "startPosInClass": 5,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Mikhail Gerachshenko",
+        "laps": 110,
+        "avgLap": 1250231,
+        "bestLap": 1232274,
+        "incidents": 13
+       },
+       {
+        "name": "Jesse Adams5",
+        "laps": 90,
+        "avgLap": 1286748,
+        "bestLap": 1246599,
+        "incidents": 35
+       }
+      ]
+     },
+     {
+      "pos": 16,
+      "startPos": 20,
+      "team": "M. Slipstream Brothers",
+      "car": "Mercedes-AMG GT3 2020",
+      "carNum": "33",
+      "laps": 188,
+      "bestLap": 1377858,
+      "avgLap": 1495239,
+      "interval": -1,
+      "incidents": 90,
+      "reasonOut": "Disconnected",
+      "lapsLead": 0,
+      "champPts": 40,
+      "carClass": "IMSA23",
+      "posInClass": 7,
+      "startPosInClass": 7,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Jonas Wetterau",
+        "laps": 95,
+        "avgLap": 1421060,
+        "bestLap": 1377858,
+        "incidents": 25
+       },
+       {
+        "name": "Niklas Wälde",
+        "laps": 93,
+        "avgLap": 1467742,
+        "bestLap": 1391676,
+        "incidents": 65
+       }
+      ]
+     },
+     {
+      "pos": 17,
+      "startPos": 11,
+      "team": "260 Motorsport Jr.Jr.",
+      "car": "Porsche 963 GTP",
+      "carNum": "3",
+      "laps": 155,
+      "bestLap": 1232036,
+      "avgLap": 4688591,
+      "interval": -1,
+      "incidents": 62,
+      "reasonOut": "Disconnected",
+      "lapsLead": 0,
+      "champPts": 23,
+      "carClass": "GTP",
+      "posInClass": 10,
+      "startPosInClass": 11,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Alex Kryukov",
+        "laps": 87,
+        "avgLap": 1315352,
+        "bestLap": 1240710,
+        "incidents": 27
+       },
+       {
+        "name": "Daniel Martinsky",
+        "laps": 68,
+        "avgLap": 6391023,
+        "bestLap": 1232036,
+        "incidents": 35
+       }
+      ]
+     },
+     {
+      "pos": 18,
+      "startPos": 3,
+      "team": "OFFICIAL FFI TEAM 1",
+      "car": "Porsche 963 GTP",
+      "carNum": "1",
+      "laps": 74,
+      "bestLap": 1233882,
+      "avgLap": 1297545,
+      "interval": -1,
+      "incidents": 24,
+      "reasonOut": "Disqualified",
+      "lapsLead": 22,
+      "champPts": 15,
+      "carClass": "GTP",
+      "posInClass": 11,
+      "startPosInClass": 3,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Beau Mcauley",
+        "laps": 51,
+        "avgLap": 1283895,
+        "bestLap": 1233882,
+        "incidents": 21
+       },
+       {
+        "name": "Thomas Edgar",
+        "laps": 23,
+        "avgLap": 1256194,
+        "bestLap": 1245895,
+        "incidents": 3
+       }
+      ]
+     },
+     {
+      "pos": 19,
+      "startPos": 25,
+      "team": "Gizmo-Legacy Racing",
+      "car": "Ford Mustang GT3",
+      "carNum": "17",
+      "laps": 30,
+      "bestLap": 1402867,
+      "avgLap": 1470281,
+      "interval": -1,
+      "incidents": 22,
+      "reasonOut": "Disconnected",
+      "lapsLead": 0,
+      "champPts": 35,
+      "carClass": "IMSA23",
+      "posInClass": 8,
+      "startPosInClass": 12,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Bela Schisler",
+        "laps": 24,
+        "avgLap": 1439052,
+        "bestLap": 1406931,
+        "incidents": 13
+       },
+       {
+        "name": "Michael Seiff",
+        "laps": 6,
+        "avgLap": 1427625,
+        "bestLap": 1402867,
+        "incidents": 9
+       }
+      ]
+     },
+     {
+      "pos": 20,
+      "startPos": 24,
+      "team": "Vexx Racing",
+      "car": "Ferrari 296 GT3",
+      "carNum": "16",
+      "laps": 0,
+      "bestLap": -1,
+      "avgLap": 0,
+      "interval": -1,
+      "incidents": 76,
+      "reasonOut": "Disconnected",
+      "lapsLead": 0,
+      "champPts": 0,
+      "carClass": "IMSA23",
+      "posInClass": 9,
+      "startPosInClass": 11,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Haden Boutiller",
+        "laps": 206,
+        "avgLap": 1491816,
+        "bestLap": 1392171,
+        "incidents": 57
+       },
+       {
+        "name": "Coy Plowman",
+        "laps": 25,
+        "avgLap": 1438403,
+        "bestLap": 1417618,
+        "incidents": 19
+       }
+      ]
+     },
+     {
+      "pos": 21,
+      "startPos": 8,
+      "team": "Numb Thumbs Racing",
+      "car": "Porsche 963 GTP",
+      "carNum": "4",
+      "laps": 0,
+      "bestLap": -1,
+      "avgLap": 0,
+      "interval": -1,
+      "incidents": 64,
+      "reasonOut": "Disconnected",
+      "lapsLead": 0,
+      "champPts": 0,
+      "carClass": "GTP",
+      "posInClass": 12,
+      "startPosInClass": 8,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Michael Piecko",
+        "laps": 60,
+        "avgLap": 1298547,
+        "bestLap": 1234179,
+        "incidents": 27
+       },
+       {
+        "name": "Joe Harkness",
+        "laps": 45,
+        "avgLap": 1261402,
+        "bestLap": 1234196,
+        "incidents": 16
+       },
+       {
+        "name": "Kelly McQueen IV",
+        "laps": 28,
+        "avgLap": 1281908,
+        "bestLap": 1255616,
+        "incidents": 21
+       },
+       {
+        "name": "Declan Foo",
+        "laps": 0,
+        "avgLap": 0,
+        "bestLap": -1,
+        "incidents": 0
+       }
+      ]
+     },
+     {
+      "pos": 22,
+      "startPos": 23,
+      "team": "Moonbin Racing Huomao.TV",
+      "car": "Mercedes-AMG GT3 2020",
+      "carNum": "21",
+      "laps": 0,
+      "bestLap": -1,
+      "avgLap": 0,
+      "interval": -1,
+      "incidents": 58,
+      "reasonOut": "Disconnected",
+      "lapsLead": 0,
+      "champPts": 0,
+      "carClass": "IMSA23",
+      "posInClass": 10,
+      "startPosInClass": 10,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Qingyun Pu",
+        "laps": 80,
+        "avgLap": 1641936,
+        "bestLap": 1411521,
+        "incidents": 58
+       },
+       {
+        "name": "Ta Linfu",
+        "laps": 0,
+        "avgLap": 0,
+        "bestLap": -1,
+        "incidents": 0
+       }
+      ]
+     },
+     {
+      "pos": 23,
+      "startPos": 14,
+      "team": "Tarpha Racing",
+      "car": "Mercedes-AMG GT3 2020",
+      "carNum": "12",
+      "laps": 0,
+      "bestLap": -1,
+      "avgLap": 0,
+      "interval": -1,
+      "incidents": 36,
+      "reasonOut": "Disconnected",
+      "lapsLead": 0,
+      "champPts": 0,
+      "carClass": "IMSA23",
+      "posInClass": 11,
+      "startPosInClass": 1,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Pasha Schumacherov",
+        "laps": 49,
+        "avgLap": 1442403,
+        "bestLap": 1373168,
+        "incidents": 14
+       },
+       {
+        "name": "Taras Silivanenko2",
+        "laps": 19,
+        "avgLap": 1625574,
+        "bestLap": 1402531,
+        "incidents": 22
+       },
+       {
+        "name": "Roman Belik",
+        "laps": 0,
+        "avgLap": 0,
+        "bestLap": -1,
+        "incidents": 0
+       }
+      ]
+     },
+     {
+      "pos": 24,
+      "startPos": 15,
+      "team": "Slow",
+      "car": "Chevrolet Corvette Z06 GT3.R",
+      "carNum": "19",
+      "laps": 0,
+      "bestLap": -1,
+      "avgLap": 0,
+      "interval": -1,
+      "incidents": 4,
+      "reasonOut": "Disconnected",
+      "lapsLead": 0,
+      "champPts": 0,
+      "carClass": "IMSA23",
+      "posInClass": 12,
+      "startPosInClass": 2,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Cole Reedy2",
+        "laps": 18,
+        "avgLap": 1424042,
+        "bestLap": 1374973,
+        "incidents": 4
+       },
+       {
+        "name": "John Conoan",
+        "laps": 0,
+        "avgLap": 0,
+        "bestLap": -1,
+        "incidents": 0
+       }
+      ]
+     },
+     {
+      "pos": 25,
+      "startPos": 22,
+      "team": "Weird Looking Honda",
+      "car": "Porsche 911 GT3 R (992)",
+      "carNum": "9",
+      "laps": 0,
+      "bestLap": -1,
+      "avgLap": 0,
+      "interval": -1,
+      "incidents": 5,
+      "reasonOut": "Disconnected",
+      "lapsLead": 0,
+      "champPts": 0,
+      "carClass": "IMSA23",
+      "posInClass": 13,
+      "startPosInClass": 9,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Andrew Mcmanus",
+        "laps": 9,
+        "avgLap": 1445119,
+        "bestLap": 1417556,
+        "incidents": 5
+       },
+       {
+        "name": "Andrew Kapela2",
+        "laps": 0,
+        "avgLap": 0,
+        "bestLap": -1,
+        "incidents": 0
+       }
+      ]
+     },
+     {
+      "pos": 26,
+      "startPos": 13,
+      "team": "C4N",
+      "car": "Porsche 963 GTP",
+      "carNum": "6",
+      "laps": 0,
+      "bestLap": -1,
+      "avgLap": 0,
+      "interval": -1,
+      "incidents": 13,
+      "reasonOut": "Disconnected",
+      "lapsLead": 0,
+      "champPts": 0,
+      "carClass": "GTP",
+      "posInClass": 13,
+      "startPosInClass": 13,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Leon Elmaskaya",
+        "laps": 5,
+        "avgLap": 1465337,
+        "bestLap": -1,
+        "incidents": 13
+       },
+       {
+        "name": "El León Can",
+        "laps": 0,
+        "avgLap": 0,
+        "bestLap": -1,
+        "incidents": 0
+       }
+      ]
+     },
+     {
+      "pos": 27,
+      "startPos": 27,
+      "team": "Jachmann 1882",
+      "car": "Porsche 911 GT3 R (992)",
+      "carNum": "84",
+      "laps": 0,
+      "bestLap": -1,
+      "avgLap": 0,
+      "interval": -1,
+      "incidents": 0,
+      "reasonOut": "Disconnected",
+      "lapsLead": 0,
+      "champPts": 0,
+      "carClass": "IMSA23",
+      "posInClass": 14,
+      "startPosInClass": 14,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Tino Jachmann",
+        "laps": 0,
+        "avgLap": 0,
+        "bestLap": -1,
+        "incidents": 0
+       },
+       {
+        "name": "Remo Jachmann",
+        "laps": 0,
+        "avgLap": 0,
+        "bestLap": -1,
+        "incidents": 0
+       }
+      ]
+     },
+     {
+      "pos": 28,
+      "startPos": 28,
+      "team": "NGC Racing Team",
+      "car": "Mercedes-AMG GT3 2020",
+      "carNum": "20",
+      "laps": 0,
+      "bestLap": -1,
+      "avgLap": 0,
+      "interval": -1,
+      "incidents": 0,
+      "reasonOut": "Disconnected",
+      "lapsLead": 0,
+      "champPts": 0,
+      "carClass": "IMSA23",
+      "posInClass": 15,
+      "startPosInClass": 15,
+      "classInterval": -1,
+      "drivers": [
+       {
+        "name": "Carl Williamsson",
+        "laps": 0,
+        "avgLap": 0,
+        "bestLap": -1,
+        "incidents": 0
+       },
+       {
+        "name": "Noah Sprecher",
+        "laps": 0,
+        "avgLap": 0,
+        "bestLap": -1,
+        "incidents": 0
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "entries": [
+   {
+    "carNum": "337",
+    "session": 0,
+    "car": "McLaren 720S GT3 EVO",
+    "teamName": "Furred and Feathers Racing",
+    "pos": 11,
+    "startPos": 16,
+    "gained": 5,
+    "laps": 574,
+    "bestLap": 1380885,
+    "avgLap": 1507125,
+    "incidents": 242,
+    "champPts": 50,
+    "interval": -1,
+    "lapsLead": 0,
+    "reasonOut": "Running",
+    "carClass": "IMSA23",
+    "posInClass": 5,
+    "startPosInClass": 3,
+    "gainedInClass": -2,
+    "classInterval": -1,
+    "drivers": [
+     {
+      "name": "Matthew Lutz2",
+      "laps": 151,
+      "bestLap": 1382823,
+      "avgLap": 1419857,
+      "incidents": 54
+     },
+     {
+      "name": "Caoimhe Harleman",
+      "laps": 143,
+      "bestLap": 1380885,
+      "avgLap": 1479195,
+      "incidents": 68
+     },
+     {
+      "name": "Michael Marczak",
+      "laps": 141,
+      "bestLap": 1416522,
+      "avgLap": 1515999,
+      "incidents": 67
+     },
+     {
+      "name": "Gregory Grantham",
+      "laps": 139,
+      "bestLap": 1399207,
+      "avgLap": 1523398,
+      "incidents": 53
+     }
+    ]
+   }
+  ]
+ }
+]

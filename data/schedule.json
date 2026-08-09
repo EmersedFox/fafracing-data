@@ -1,0 +1,193 @@
+[
+  {
+    "series": "GT Endurance Series by Simucube",
+    "season": "GT Endurance Series by Simucube - 2026 Season 2",
+    "seasonShort": "2026 Season 2",
+    "rounds": [
+      {
+        "round": 1,
+        "date": "2026-03-29",
+        "track": "Sebring International Raceway",
+        "config": "International",
+        "time": "1:00 PM ET",
+        "raceId": "sebring-2026-s2-r1"
+      },
+      {
+        "round": 2,
+        "date": "2026-04-04",
+        "track": "Summit Point Raceway",
+        "config": "Summit Point Raceway",
+        "time": "3:00 PM ET",
+        "raceId": "sebring-2026-s2-r2"
+      },
+      {
+        "round": 2,
+        "date": "2026-04-05",
+        "track": "Summit Point Raceway",
+        "config": "Summit Point Raceway",
+        "time": "1:00 PM ET",
+        "raceId": "summit-point-raceway-2026-s2-r2"
+      },
+      {
+        "round": 3,
+        "date": "2026-04-12",
+        "track": "Circuit de Spa-Francorchamps",
+        "config": "Grand Prix Pits",
+        "time": "1:00 PM ET",
+        "raceId": "circuit-de-spa-francorchamps-2026-s2-r3"
+      },
+      {
+        "round": 4,
+        "date": "2026-04-19",
+        "track": "Autodromo Internazionale del Mugello",
+        "config": "Grand Prix",
+        "time": "1:00 PM ET",
+        "raceId": "autodromo-internazionale-del-mugello-2026-s2-r4"
+      },
+      {
+        "round": 5,
+        "date": "2026-04-26",
+        "track": "Fuji International Speedway",
+        "config": "Grand Prix",
+        "time": "1:00 PM ET",
+        "raceId": "fuji-international-speedway-2026-s2-r5"
+      },
+      {
+        "round": 6,
+        "date": "2026-05-03",
+        "track": "Brands Hatch Circuit",
+        "config": "Grand Prix",
+        "time": "1:00 PM ET",
+        "raceId": "brands-hatch-circuit-2026-s2-r6"
+      },
+      {
+        "round": 7,
+        "date": "2026-05-10",
+        "track": "Adelaide Street Circuit",
+        "config": "N/A",
+        "time": "1:00 PM ET",
+        "raceId": "adelaide-street-circuit-2026-s2-r7"
+      },
+      {
+        "round": 8,
+        "date": "2026-05-17",
+        "track": "Suzuka International Racing Course",
+        "config": "Grand Prix",
+        "time": "1:00 PM ET",
+        "raceId": "suzuka-international-racing-course-2026-s2-r8"
+      },
+      {
+        "round": 10,
+        "date": "2026-05-31",
+        "track": "Thruxton Circuit",
+        "config": "N/A",
+        "time": "1:00 PM ET",
+        "raceId": "thruxton-circuit-2026-s2-r10"
+      },
+      {
+        "round": 11,
+        "date": "2026-06-07",
+        "track": "Miami International Autodrome",
+        "config": "Grand Prix",
+        "time": "1:00 PM ET",
+        "raceId": "miami-international-autodrome-2026-s2-r11"
+      }
+    ]
+  },
+  {
+    "series": "Global Endurance Tour",
+    "season": "Global Endurance Tour - 2026 Season 3",
+    "seasonShort": "2026 Season 3",
+    "rounds": [
+      {
+        "round": null,
+        "series": "Special Races",
+        "length": "6 Hours",
+        "date": "2026-06-20",
+        "track": "Watkins Glen International",
+        "config": "Boot",
+        "time": "12:00 PM ET",
+        "confirmed": true,
+        "raceId": "watkins-glen-international-2026-s3-r0"
+      },
+      {
+        "round": 1,
+        "series": "Global Endurance Tour",
+        "length": "24 Hours",
+        "date": "2026-06-27",
+        "track": "Mobility Resort Motegi",
+        "config": "",
+        "time": "10:00 AM ET",
+        "confirmed": false,
+        "raceId": null,
+        "cars": [
+          "337"
+        ]
+      },
+      {
+        "round": 2,
+        "series": "Global Endurance Tour",
+        "length": "24 Hours",
+        "date": "2026-07-11",
+        "track": "Circuit de Spa-Francorchamps",
+        "config": "Grand Prix Pits",
+        "time": "2:00 PM ET",
+        "confirmed": true,
+        "raceId": "circuit-de-spa-francorchamps-2026-s3-r1"
+      },
+      {
+        "round": null,
+        "series": "Special Races",
+        "length": "6 Hours",
+        "date": "2026-07-25",
+        "track": "Road America",
+        "config": "",
+        "time": "12:00 PM ET",
+        "confirmed": true,
+        "raceId": "road-america-2026-s3-r0"
+      },
+      {
+        "round": 3,
+        "series": "Global Endurance Tour",
+        "length": "24 Hours",
+        "date": "2026-08-08",
+        "track": "Fuji International Speedway",
+        "config": "No Chicane",
+        "time": "2:00 PM ET",
+        "confirmed": true,
+        "raceId": null,
+        "cars": [
+          "337"
+        ]
+      },
+      {
+        "round": 5,
+        "series": "Global Endurance Tour",
+        "length": "24 Hours",
+        "date": "2026-08-22",
+        "track": "Daytona International Speedway",
+        "config": "Road Course",
+        "time": "2:00 PM ET",
+        "confirmed": true,
+        "raceId": null,
+        "cars": [
+          "337"
+        ]
+      },
+      {
+        "round": 6,
+        "series": "Global Endurance Tour",
+        "length": "24 Hours",
+        "date": "2026-09-05",
+        "track": "Circuit des 24 Heures du Mans",
+        "config": "24 Heures du Mans",
+        "time": "2:00 PM ET",
+        "confirmed": true,
+        "raceId": null,
+        "cars": [
+          "337"
+        ]
+      }
+    ]
+  }
+]
