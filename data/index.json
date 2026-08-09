@@ -23,6 +23,21 @@
   "schedule": "schedule.json",
   "seasons": [
     {
+      "id": "2026-s3-global-endurance-tour",
+      "season": "Global Endurance Tour - 2026 Season 3",
+      "seasonShort": "2026 Season 3",
+      "series": "Global Endurance Tour",
+      "kind": "championship",
+      "year": 2026,
+      "file": "seasons/2026-s3-global-endurance-tour.json",
+      "events": 2,
+      "cars": [
+        "337"
+      ],
+      "firstDate": "2026-07-12",
+      "lastDate": "2026-08-08"
+    },
+    {
       "id": "2026-special-events",
       "season": "2026 Special Events",
       "seasonShort": "2026 Specials",
@@ -36,21 +51,6 @@
       ],
       "firstDate": "2026-06-20",
       "lastDate": "2026-07-25"
-    },
-    {
-      "id": "2026-s3-global-endurance-tour",
-      "season": "Global Endurance Tour - 2026 Season 3",
-      "seasonShort": "2026 Season 3",
-      "series": "Global Endurance Tour",
-      "kind": "championship",
-      "year": 2026,
-      "file": "seasons/2026-s3-global-endurance-tour.json",
-      "events": 1,
-      "cars": [
-        "337"
-      ],
-      "firstDate": "2026-07-12",
-      "lastDate": "2026-07-12"
     },
     {
       "id": "2026-s2-gt-endurance",

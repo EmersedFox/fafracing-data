@@ -7,20 +7,23 @@ iRacing export; if they get drawn into different splits you have two.
 Either way it becomes a single event with one session per split and one
 entry per car.
 
-  # both cars in the same split
-  python tools/import_race.py \
-      --season 2027-s1-global-endurance-tour \
-      --session eventresult-84560263.json:2:5
+Split number, total splits, season and event id are all read straight
+out of the export. Usually you just point it at the files.
 
-  # cars split up
+  # both cars in the same split
+  python tools/import_race.py --session eventresult-87810489.json
+
+  # cars split up — one export per split
   python tools/import_race.py \
-      --season 2027-s1-global-endurance-tour \
-      --session eventresult-84560263.json:2:5 \
-      --session eventresult-84560291.json:5:5
+      --session eventresult-87810488.json \
+      --session eventresult-87810489.json
 
 Options
-  --season ID       season id from data/index.json (required)
-  --session SPEC    path[:split[:totalSplits]], repeat once per split
+  --season ID       season id from data/index.json; auto-detected from
+                    the export's season name when omitted
+  --session SPEC    path[:split[:totalSplits]], repeat once per split.
+                    The :split:total part is only needed when the export
+                    has no session_splits list.
   --id SLUG         override the generated event id
   --event-name TEXT label for one-off races, e.g. "6 Hours of the Glen"
   --data DIR        data folder (default: data)
@@ -65,6 +68,51 @@ def team_aliases(data_dir):
     return DEFAULT_ALIASES
 
 
+def unwrap(payload):
+    """iRacing exports wrap the real payload in {"type":..., "data":{...}}."""
+    if isinstance(payload, dict) and "data" in payload and "session_results" not in payload:
+        return payload["data"]
+    return payload
+
+
+def detect_split(payload):
+    """Work out which split this is from the session_splits list.
+
+    iRacing orders the splits by strength of field, top split first, so
+    the position of our subsession in that list is the split number.
+    Returns (split, total) or (None, None) if the export doesn't say.
+    """
+    splits = payload.get("session_splits") or []
+    me = payload.get("subsession_id")
+    ids = [s.get("subsession_id") for s in splits]
+    if me in ids:
+        return ids.index(me) + 1, len(ids)
+    return (None, len(ids) or None)
+
+
+def car_number(row):
+    """The car number lives inside the livery object."""
+    livery = row.get("livery") or {}
+    return str(pick(livery, "car_number", default="") or
+               pick(row, "livery_car_number", "car_number", default=""))
+
+
+def clean_team(name):
+    """Strip the ' - 337' style car suffix iRacing team names carry."""
+    return re.sub(r"\s*[-–—]\s*#?\d{1,3}\s*$", "", str(name or "")).strip()
+
+
+def matches_team(name, aliases):
+    """Alias match that tolerates the car-number suffix, so a new car
+    number works without editing config.js."""
+    raw = str(name or "").strip()
+    bare = clean_team(raw)
+    for a in aliases:
+        if raw == a or bare == a or bare == clean_team(a):
+            return True
+    return False
+
+
 def race_session(payload):
     """The RACE block inside an iRacing event result export."""
     blocks = payload.get("session_results") or []
@@ -102,9 +150,10 @@ def build_session(payload, split, total_splits, aliases):
         row = OrderedDict()
         row["pos"] = (r.get("finish_position") or 0) + 1
         row["startPos"] = (r.get("starting_position") or 0) + 1
-        row["team"] = pick(r, "team_name", "display_name", default="")
+        row["teamRaw"] = pick(r, "team_name", "display_name", default="")
+        row["team"] = clean_team(row["teamRaw"])
         row["car"] = r.get("car_name")
-        row["carNum"] = str(pick(r, "livery_car_number", "car_number", default=""))
+        row["carNum"] = car_number(r)
         row["laps"] = r.get("laps_complete")
         row["bestLap"] = pick(r, "best_lap_time", default=-1)
         row["avgLap"] = pick(r, "average_lap", default=0)
@@ -150,7 +199,8 @@ def build_session(payload, split, total_splits, aliases):
     session["numDrivers"] = payload.get("num_drivers") or sum(len(r["drivers"]) for r in results)
     session["laps"] = payload.get("event_laps_complete")
     session["leadChanges"] = payload.get("num_lead_changes") or 0
-    session["eventBestLap"] = min([r["bestLap"] for r in results if r["bestLap"] and r["bestLap"] > 0] or [-1])
+    session["eventBestLap"] = payload.get("event_best_lap_time") or \
+        min([r["bestLap"] for r in results if r["bestLap"] and r["bestLap"] > 0] or [-1])
     session["startTime"] = payload.get("start_time")
     session["endTime"] = payload.get("end_time")
     session["temp"] = weather.get("temp_value")
@@ -159,7 +209,9 @@ def build_session(payload, split, total_splits, aliases):
         session["classes"] = classes
     session["results"] = results
 
-    ours = [r for r in results if r["team"] in aliases]
+    ours = [r for r in results if matches_team(r.get("teamRaw"), aliases)]
+    for r in results:
+        r.pop("teamRaw", None)
     return session, ours
 
 
@@ -194,7 +246,7 @@ def build_entry(row, session_index, multiclass):
 
 def main():
     ap = argparse.ArgumentParser(description="Add a race to the FAF Racing site data.")
-    ap.add_argument("--season", required=True, help="season id from data/index.json")
+    ap.add_argument("--season", help="season id from data/index.json; auto-detected from the export when omitted")
     ap.add_argument("--session", action="append", required=True,
                     metavar="PATH[:SPLIT[:TOTAL]]", help="one iRacing export per split")
     ap.add_argument("--id", help="override the generated event id")
@@ -210,11 +262,6 @@ def main():
         sys.exit("No %s — run tools/migrate.py first." % index_path)
     index = json.load(open(index_path, "r", encoding="utf-8"))
 
-    season_meta = next((s for s in index["seasons"] if s["id"] == args.season), None)
-    if season_meta is None:
-        sys.exit("Unknown season %r. Known: %s"
-                 % (args.season, ", ".join(s["id"] for s in index["seasons"])))
-
     sessions, entries, payloads = [], [], []
     for spec in args.session:
         parts = spec.split(":")
@@ -224,29 +271,68 @@ def main():
         if not os.path.exists(path):
             sys.exit("Missing file: %s" % path)
 
-        payload = json.load(open(path, "r", encoding="utf-8"))
+        payload = unwrap(json.load(open(path, "r", encoding="utf-8")))
         payloads.append(payload)
+
+        # The export usually knows its own split. Anything given on the
+        # command line wins.
+        auto_split, auto_total = detect_split(payload)
+        if split is None:
+            split = auto_split
+        if total is None:
+            total = auto_total
+        if split is None:
+            print("  ! %s doesn't say which split it is — add :SPLIT:TOTAL to the "
+                  "--session value." % os.path.basename(path))
+
         session, ours = build_session(payload, split, total, aliases)
         idx = len(sessions)
         sessions.append(session)
 
         if not ours:
-            print("  ! No FAF car found in %s — session kept, no entry added." % os.path.basename(path))
+            names = sorted({r["team"] for r in session["results"]})
+            print("  ! No FAF car found in %s." % os.path.basename(path))
+            print("    Teams in this split: %s" % ", ".join(names[:8]))
+            print("    Check teamAliases in js/config.js.")
         for row in ours:
             entries.append(build_entry(row, idx, session["multiclass"]))
-            print("  + #%s  P%s from P%s  (split %s)"
-                  % (row["carNum"], row["pos"], row["startPos"], split))
+            print("  + #%s  P%s from P%s  (split %s of %s)"
+                  % (row["carNum"], row["pos"], row["startPos"], split, total))
+
+    head = payloads[0]
+
+    # Season: use --season if given, otherwise match the export's own
+    # season name against the manifest.
+    season_meta = None
+    if args.season:
+        season_meta = next((s for s in index["seasons"] if s["id"] == args.season), None)
+        if season_meta is None:
+            sys.exit("Unknown season %r. Known: %s"
+                     % (args.season, ", ".join(s["id"] for s in index["seasons"])))
+    else:
+        want = head.get("season_name")
+        season_meta = next((s for s in index["seasons"] if s.get("season") == want), None)
+        if season_meta is None:
+            sys.exit("Couldn't match season %r from the export. Pass --season with one of: %s"
+                     % (want, ", ".join(s["id"] for s in index["seasons"])))
+        print("  season: %s (matched %r)" % (season_meta["id"], want))
 
     if not entries:
         sys.exit("No FAF cars found in any file. Check the team name aliases in js/config.js.")
 
-    head = payloads[0]
     track = (head.get("track") or {}).get("track_name") or "Unknown Track"
     config = (head.get("track") or {}).get("config_name") or ""
     date = str(head.get("start_time") or "")[:10]
 
     event = OrderedDict()
-    event["id"] = args.id or "%s-%s" % (slugify(track), slugify(args.season))
+    if args.id:
+        event["id"] = args.id
+    elif head.get("season_year") and head.get("season_quarter") is not None:
+        event["id"] = "%s-%s-s%s-r%s" % (slugify(track), head["season_year"],
+                                         head["season_quarter"],
+                                         (head.get("race_week_num") or 0) + 1)
+    else:
+        event["id"] = "%s-%s" % (slugify(track), slugify(season_meta["id"]))
     event["date"] = date
     event["track"] = track
     event["config"] = config
