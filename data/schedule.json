@@ -108,7 +108,10 @@
         "config": "Boot",
         "time": "12:00 PM ET",
         "confirmed": true,
-        "raceId": "watkins-glen-international-2026-s3-r0"
+        "raceId": "watkins-glen-international-2026-s3-r0",
+        "cars": [
+          "337"
+        ]
       },
       {
         "round": 1,
@@ -133,7 +136,10 @@
         "config": "Grand Prix Pits",
         "time": "2:00 PM ET",
         "confirmed": true,
-        "raceId": "circuit-de-spa-francorchamps-2026-s3-r1"
+        "raceId": "circuit-de-spa-francorchamps-2026-s3-r1",
+        "cars": [
+          "337"
+        ]
       },
       {
         "round": null,
@@ -144,7 +150,10 @@
         "config": "",
         "time": "12:00 PM ET",
         "confirmed": true,
-        "raceId": "road-america-2026-s3-r0"
+        "raceId": "road-america-2026-s3-r0",
+        "cars": [
+          "337"
+        ]
       },
       {
         "round": 3,
