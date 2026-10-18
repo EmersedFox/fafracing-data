@@ -108,10 +108,7 @@
         "config": "Boot",
         "time": "12:00 PM ET",
         "confirmed": true,
-        "raceId": "watkins-glen-international-2026-s3-r0",
-        "cars": [
-          "337"
-        ]
+        "raceId": "watkins-glen-international-2026-s3-r0"
       },
       {
         "round": 1,
@@ -136,10 +133,7 @@
         "config": "Grand Prix Pits",
         "time": "2:00 PM ET",
         "confirmed": true,
-        "raceId": "circuit-de-spa-francorchamps-2026-s3-r1",
-        "cars": [
-          "337"
-        ]
+        "raceId": "circuit-de-spa-francorchamps-2026-s3-r1"
       },
       {
         "round": null,
@@ -150,10 +144,7 @@
         "config": "",
         "time": "12:00 PM ET",
         "confirmed": true,
-        "raceId": "road-america-2026-s3-r0",
-        "cars": [
-          "337"
-        ]
+        "raceId": "road-america-2026-s3-r0"
       },
       {
         "round": 3,
@@ -177,7 +168,7 @@
         "track": "Daytona International Speedway",
         "config": "Road Course",
         "time": "2:00 PM ET",
-        "confirmed": true,
+        "confirmed": false,
         "raceId": null,
         "cars": [
           "337"
@@ -191,11 +182,29 @@
         "track": "Circuit des 24 Heures du Mans",
         "config": "24 Heures du Mans",
         "time": "2:00 PM ET",
-        "confirmed": true,
+        "confirmed": false,
         "raceId": null,
         "cars": [
           "337"
         ]
+      }
+    ]
+  },
+   {
+    "series": "Off Season",
+    "season": "Off Season - 2026 Season 4",
+    "seasonShort": "2026 Season 4",
+    "rounds": [
+        {
+        "round": null,
+        "series": "Special Races",
+        "length": "8 Hours",
+        "date": "2026-10-17",
+        "track": "Indianapolis Motor Speedway",
+        "config": "Road Course",
+        "time": "12:00 PM ET",
+        "confirmed": true,
+        "raceId": "indianapolis-motor-speedway-2026-s4-r1"
       }
     ]
   }
